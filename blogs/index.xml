@@ -6,10 +6,24 @@
     <description>Recent content in Blogs on Stellar.Casa - Beyond Stellar</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 19 Oct 2019 12:32:57 +0530</lastBuildDate>
+    <lastBuildDate>Fri, 20 Dec 2019 23:32:50 +0530</lastBuildDate>
     
 	<atom:link href="https://stellar.casa/blogs/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>submitXDR</title>
+      <link>https://stellar.casa/blogs/submitxdr/</link>
+      <pubDate>Fri, 20 Dec 2019 23:32:50 +0530</pubDate>
+      
+      <guid>https://stellar.casa/blogs/submitxdr/</guid>
+      <description>Application to submit Signed XDR manually in simple Command Line interface
+Features Lightweight application for submitting Signed Stellar Transactions. - Supports submitting any XDR - Supports Horizon Public and Test Network - Prints Response and Ledger Information for Success Transactions
+Dependencies  Stellar Go SDK  Usage  Clone the repo
+git clone github.com/aanupam23/submitXDR  Run this application using
+go run submitXDR.go   Licence 
+Stellar is trademark of Stellar Development Foundation.</description>
+    </item>
     
     <item>
       <title>go-stellar-validate</title>

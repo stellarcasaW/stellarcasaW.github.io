@@ -18,10 +18,8 @@
       
       <guid>https://stellar.casa/blogs/submitxdr/</guid>
       <description>Application to submit Signed XDR manually in simple Command Line interface
-Features Lightweight application for submitting Signed Stellar Transactions. - Supports submitting any XDR - Supports Horizon Public and Test Network - Prints Response and Ledger Information for Success Transactions
-Dependencies  Stellar Go SDK  Usage  Clone the repo
-git clone github.com/aanupam23/submitXDR  Run this application using
-go run submitXDR.go   Licence 
+Features Lightweight application for submitting Signed Stellar Transactions.
+ Supports submitting any XDR Supports Horizon Public and Test Network Prints Response and Ledger Information for Success Transactions  Dependencies  Stellar Go SDK  Usage  Clone the repo  git clone github.com/aanupam23/submitXDR Run this application using  go run submitXDR.go Licence 
 Stellar is trademark of Stellar Development Foundation.</description>
     </item>
     
@@ -40,7 +38,8 @@ Stellar is trademark of Stellar Development Foundation.</description>
       <pubDate>Sat, 19 Oct 2019 12:32:57 +0530</pubDate>
       
       <guid>https://stellar.casa/blogs/go-stellar-validate/</guid>
-      <description>Dependencies  Stellar Go SDK  Install go get -u github.com/aanupam23/go-stellar-validate  Getting Started  go-stellar-validate is a handy package for id validation in building Stellar applications. This package that helps in validating Stellar id&amp;rsquo;s such as Public Key, Private Key, Valid Asset Length, Transactions id before using them in your application.  :question: WIP - This Library is work in progress.
+      <description>Dependencies  Stellar Go SDK  Install go get -u github.com/aanupam23/go-stellar-validate Getting Started go-stellar-validate is a handy package for id validation in building Stellar applications. This package that helps in validating Stellar id&#39;s such as Public Key, Private Key, Valid Asset Length, Transactions id before using them in your application.
+:question: WIP - This Library is work in progress.
 Contribute go-stellar-validate is open source and all contributions are welcome.</description>
     </item>
     
@@ -50,7 +49,7 @@ Contribute go-stellar-validate is open source and all contributions are welcome.
       <pubDate>Wed, 10 Jul 2019 12:32:57 +0530</pubDate>
       
       <guid>https://stellar.casa/blogs/go-stellar-ipfs/</guid>
-      <description>Dependencies  Stellar Go SDK go-ipfs-api  Install go get -u github.com/aanupam23/go-stellar-ipfs  Getting Started go-stellar-ipfs is a library that acts as a bridge between Stellar and IPFS. It combines the low fee and fast speed stellar with ipfs. Using this library you can build Stellar and IPFS application very quickly.
+      <description>Dependencies  Stellar Go SDK go-ipfs-api  Install go get -u github.com/aanupam23/go-stellar-ipfs Getting Started go-stellar-ipfs is a library that acts as a bridge between Stellar and IPFS. It combines the low fee and fast speed stellar with ipfs. Using this library you can build Stellar and IPFS application very quickly.
 go-stellar-ipfs implements StellarShell that helps you use premade functions for sending any sort of data to IPFS using stellar transaction, memo, manage data and also allows reading of that data.</description>
     </item>
     

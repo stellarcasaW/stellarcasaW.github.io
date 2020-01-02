@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<meta name="description" content="Stellar.Casa - A place for awesome stellar tools and utilities.">
 	<meta name="author" content="Stellar.Casa">
-	<meta name="generator" content="Hugo 0.59.1" />
+	<meta name="generator" content="Hugo 0.62.0" />
 	<title>go-stellar-IPFS &middot; Stellar.Casa - Beyond Stellar</title>
 	<!-- Stylesheets -->
 	
@@ -21,8 +21,8 @@
 	<link href="https://stellar.casa/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
 	
-	<link rel="shortcut icon" type="image/png" href="https://stellar.casa/favicon.png">
-	<link rel="icon" type="image/png" href="https://stellar.casa/favicon.png">
+	<link rel="shortcut icon" type="image/x-icon" href="https://stellar.casa/favicon.png">
+	<link rel="icon" type="image/x-icon" href="https://stellar.casa/favicon.png">
 	
 
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -78,36 +78,21 @@
                                 <h1>go-stellar-IPFS</h1>
                             </header>
                             
-                            
-
-<p><a href="https://github.com/aanupam23/go-stellar-ipfs/releases"><img src="https://img.shields.io/badge/go--stellar--ipfs-v0.3-orange.svg" alt="Version" /></a> <a href="https://opensource.org/licenses/Apache-2.0"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="License" /></a> <a href="https://godoc.org/github.com/aanupam23/go-stellar-ipfs"><img src="https://img.shields.io/badge/godoc-document-blue.svg" alt="Document" /></a></p>
-
+                            <p><a href="https://github.com/aanupam23/go-stellar-ipfs/releases"><img src="https://img.shields.io/badge/go--stellar--ipfs-v0.3-orange.svg" alt="Version"></a> <a href="https://opensource.org/licenses/Apache-2.0"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="License"></a> <a href="https://godoc.org/github.com/aanupam23/go-stellar-ipfs"><img src="https://img.shields.io/badge/godoc-document-blue.svg" alt="Document"></a></p>
 <h1 id="dependencies">Dependencies</h1>
-
 <ul>
 <li><a href="https://github.com/stellar/go">Stellar Go SDK</a></li>
 <li><a href="https://github.com/ipfs/go-ipfs-api">go-ipfs-api</a></li>
 </ul>
-
 <h1 id="install">Install</h1>
-
 <pre><code>go get -u github.com/aanupam23/go-stellar-ipfs
-</code></pre>
-
-<h1 id="getting-started">Getting Started</h1>
-
+</code></pre><h1 id="getting-started">Getting Started</h1>
 <p>go-stellar-ipfs is a library that acts as a bridge between Stellar and IPFS. It combines the low fee and fast speed stellar with ipfs. Using this library you can build Stellar and IPFS application very quickly.</p>
-
 <p>go-stellar-ipfs implements StellarShell that helps you use premade functions for sending any sort of data to IPFS using stellar transaction, memo, manage data and also allows reading of that data.</p>
-
 <p>This library is divided in modular functions, which you can utilize in your application.</p>
-
 <p>Refer the below examples for sample usage.</p>
-
 <h1 id="example">Example</h1>
-
 <p>A complete example which implements addition of IPFS data in stellar compatible format using memo hash field.</p>
-
 <pre><code>package main
 
 import (
@@ -152,12 +137,8 @@ func main() {
         }
         fmt.Println(txe)
 }
-</code></pre>
-
-<p>Replace SECRETKEY and DESITINATION with your inputs.</p>
-
+</code></pre><p>Replace SECRETKEY and DESITINATION with your inputs.</p>
 <p>Another example, that reads the IPFS hash data after converting hash to multiaddr IPFS hash.</p>
-
 <pre><code>package main
 
 import (
@@ -178,48 +159,31 @@ func main() {
 
         fmt.Println(output)
 }
-</code></pre>
-
-<p>If you wish to get data in an io.Reader, than replace IpfsDataString with IpfsData function</p>
-
+</code></pre><p>If you wish to get data in an io.Reader, than replace IpfsDataString with IpfsData function</p>
 <pre><code>        output, err := ss.IpfsData(thash)
         if err != nil {
                 error := ss.IsListening()
                 panic(error)
         }
 
-</code></pre>
-
-<p>Check the godoc for complete list of functions.</p>
-
+</code></pre><p>Check the godoc for complete list of functions.</p>
 <h1 id="running-your-code">Running your code</h1>
-
 <p>Start IPFS daemon</p>
-
 <pre><code>ipfs daemon
-</code></pre>
-
-<p>Once IPFS Daemon is initialized, run your code.
+</code></pre><p>Once IPFS Daemon is initialized, run your code.
 If IPFS is not installed on your system, refer this <a href="https://docs.ipfs.io/introduction/usage/">guide</a> for installing IPFS.</p>
-
 <h1 id="featured">Featured</h1>
-
 <ul>
 <li>Featured in <a href="https://medium.com/the-stellar-dev-digest/stellar-dev-digest-issue-7-30e7a32ef27c">Stellar Dev Digest: Issue #7</a> - by Robert Durst on 2019-07-25</li>
 <li>Featured in <a href="https://blog.ipfs.io/weekly-51/">IPFS Weekly Edition 51</a> - by Jenn Turner on 2019-07-23</li>
 </ul>
-
 <h1 id="mentions">Mentions</h1>
-
 <ul>
 <li><a href="-">Stellar Roundup - July 2019</a> - by Stellar Team on 2019-08-06</li>
 <li><a href="https://medium.com/the-stellar-dev-digest/stellar-dev-digest-issue-8-39bd139a22b6">Stellar Dev Digest: Issue #8</a> - by Robert Durst on 2019-08-02</li>
 </ul>
-
-<h1 id="upcoming-missing-features">Upcoming/Missing Features</h1>
-
+<h1 id="upcomingmissing-features">Upcoming/Missing Features</h1>
 <p>This library acts as a bridge between go-ipfs-api and stellar to make features easier to use.</p>
-
 <table>
 <thead>
 <tr>
@@ -228,38 +192,32 @@ If IPFS is not installed on your system, refer this <a href="https://docs.ipfs.i
 <th align="right">Status</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td>1</td>
 <td align="center">Private Stellar</td>
 <td align="right">:heavy_check_mark:</td>
 </tr>
-
 <tr>
 <td>2</td>
 <td align="center">IPFS hash validation</td>
 <td align="right">x</td>
 </tr>
-
 <tr>
 <td>3</td>
 <td align="center">IPFS bootstrap</td>
 <td align="right">x</td>
 </tr>
-
 <tr>
 <td>4</td>
 <td align="center">SEP-0022 Support</td>
 <td align="right">x</td>
 </tr>
-
 <tr>
 <td>5</td>
 <td align="center">IPFS Add options</td>
 <td align="right">x</td>
 </tr>
-
 <tr>
 <td>6</td>
 <td align="center">Suggest any feature</td>
@@ -267,19 +225,12 @@ If IPFS is not installed on your system, refer this <a href="https://docs.ipfs.i
 </tr>
 </tbody>
 </table>
-
 <h1 id="contribute">Contribute</h1>
-
 <p><a href="https://github.com/aanupam23/go-stellar-ipfs">go-stellar-ipfs</a> is open source and all contributions are welcome.</p>
-
 <p>Please refer <a href="https://github.com/aanupam23/go-stellar-ipfs/blob/master/CONTRIBUTING.md">CONTRIBUTING.md</a> for information.</p>
-
 <h1 id="licence">Licence</h1>
-
-<p><a href="https://opensource.org/licenses/Apache-2.0"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="License" /></a></p>
-
+<p><a href="https://opensource.org/licenses/Apache-2.0"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="License"></a></p>
 <p>Stellar is trademark of <a href="https://www.stellar.org/">Stellar Development Foundation</a>.</p>
-
 <p>IPFS is trademark of <a href="https://protocol.ai/">Protocol Labs</a>.</p>
 
                         </div>
@@ -297,7 +248,7 @@ If IPFS is not installed on your system, refer this <a href="https://docs.ipfs.i
                 
                     <li><a href="https://stellar.casa" class="icon alt fa-globe" target="_blank"><span class="label">Website</span></a></li>
                 
-                    <li><a href="https://github.com/aanupam23" class="icon alt fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+                    <li><a href="https://github.com/stellarcasaW" class="icon alt fa-github" target="_blank"><span class="label">GitHub</span></a></li>
                 
                     <li><a href="mailto:stellarcasaW@gmail.com" class="icon alt fa-envelope" target="_blank"><span class="label">Email</span></a></li>
                 
